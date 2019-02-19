@@ -1,7 +1,18 @@
-function takeANumber (currentLine, newCustomer) {
-  currentLine.push(newCustomer);
-  return "Welcome, " + newCustomer + ". You are number " + currentLine.length + " in line.";
+var counter = 0;
+
+function takeANumber (ticketNumber, currentLine) {
+  counter++; 
+  
+  currentLine.push(ticketNumber);
+  return ticketNumber.toString();
+  
 }
+
+
+// function takeANumber (currentLine, newCustomer) {
+//   currentLine.push(newCustomer);
+//   return "Welcome, " + newCustomer + ". You are number " + currentLine.length + " in line.";
+// }
 
 function nowServing (currentLine) {
   var currentCustomer = "";
